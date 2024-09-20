@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Identificador de Componentes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="resultados.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-12 mb-4" id="form-container">
+                <h3 class="titulo text-center" style="color: #008cce; font-weight: 900;">Resultados da Identificação</h3>
+                <div id="resultsContainer" class="results-container"></div>
+                <div class="d-flex justify-content-center mt-4">
+                    <a href="pg-ident.html" class="btn btn-primary">Voltar</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                <img src="1.png" alt="Descrição da Imagem" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para exibir medidas dos componentes -->
+    <div class="modal fade" id="medidasModal" tabindex="-1" aria-labelledby="medidasModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="medidasModalLabel">Medidas do Componente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="medidasList">
+                        <!-- Medidas serão inseridas aqui -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="resultados.js"></script>
+</body>
+</html>

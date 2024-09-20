@@ -1,0 +1,124 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 25px auto;
+    padding: 25px;
+}
+
+.container-custom {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.container-custom h3 {
+    color: #0c2634;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.results-container {
+    width: 100%; /* Mudança para 100% para se ajustar melhor em telas pequenas */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Adiciona padding e margens menores em telas pequenas */
+@media (max-width: 768px) {
+    .row {
+        padding: 15px;
+    }
+    
+    .results-container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .container-custom {
+        padding: 15px;
+        margin-top: 20px;
+    }
+}
+
+.results-container li {
+    background-color: transparent;
+    color: #555555;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+.results-container li:last-child {
+    border-bottom: none;
+}
+
+.btn-primary {
+    background-color: #008cce;
+    border-color: #008cce;
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+    .btn-primary {
+        width: auto;
+    }
+}
+
+.result-item {
+    background-color: #0c2634;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%; /* Altera para 100% para melhorar a adaptação em telas pequenas */
+    height: auto;
+    margin: 0 auto;
+}
+
+.medidas-usuario {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.toggle-medidas {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.toggle-medidas span {
+    font-size: 12px;
+}
+
+.toggle-medidas:hover {
+    text-decoration: none;
+}
+
